@@ -59,6 +59,7 @@ class ViewControllerCoreData: UIViewController {
         func updaterStart() {
             self.updateTime = Timer.scheduledTimer(timeInterval: delay, target: self, selector: #selector(self.updater), userInfo: nil, repeats: true) }
         
+    
 
         override func viewDidLoad() {
             super.viewDidLoad()
