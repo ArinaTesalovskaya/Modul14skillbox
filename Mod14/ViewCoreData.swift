@@ -17,6 +17,7 @@ class ViewCoreData: UIView {
     @IBOutlet weak var Assistant: UIButton!
     @IBOutlet weak var TaskText: UITextView!
     
+  
     @IBAction func YesTap(_ sender: Any) {
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         let task = Tasks(context: context)

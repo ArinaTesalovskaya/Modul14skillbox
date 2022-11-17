@@ -12,6 +12,7 @@ class ViewControllerRealm: UIViewController {
     @IBOutlet weak var AddTaskButton: UIButton!
     
     @IBAction func AddTaskButtonTouch(_ sender: Any) {
+    
         self.updateTime?.invalidate()
         let AddForm = AddForm.loadFromNIB()
         self.view.addSubview(AddForm)

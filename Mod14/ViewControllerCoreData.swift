@@ -11,7 +11,8 @@ class ViewControllerCoreData: UIViewController {
     let CoreData = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var tasks = [Tasks]()
         
-        @IBAction func AddButtonTouch(_ sender: Any) {
+    @IBAction func AddButtonTouch(_ sender: Any) {
+    
             addButton.isEnabled = false
             constraints = super.view.constraints.count
             //        self.updateTime?.invalidate()
@@ -64,7 +65,8 @@ class ViewControllerCoreData: UIViewController {
             SVProgressHUD.show(withStatus:"обновление")
             SVProgressHUD.setOffsetFromCenter(UIOffset(horizontal: self.view.frame.width / 2, vertical: self.view.frame.height / 2))
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                self.getData(); self.tableView.reloadData()
+                self.getData()
+                self.tableView.reloadData()
             }
             SVProgressHUD.dismiss(withDelay: 1.0)
         }
