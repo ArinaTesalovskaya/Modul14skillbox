@@ -14,7 +14,8 @@ class ViewControllerCoreData: UIViewController {
         @IBAction func AddButtonTouch(_ sender: Any) {
             addButton.isEnabled = false
             constraints = super.view.constraints.count
-            //        self.updateTime?.invalidate()
+          
+           
             let addForm = ViewCoreData.loadFromNIB()
             self.view.addSubview(addForm)
             addForm.TaskText.becomeFirstResponder()
