@@ -1,9 +1,3 @@
-//
-//  ExtensionUserDefaults.swift
-//  Mod14
-//
-//  Created by Arina Tesalovskaya on 16.11.2022.
-//
 
 import UIKit
 

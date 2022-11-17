@@ -12,6 +12,11 @@
 		155463952924F9120090D30A /* ViewCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155463942924F9120090D30A /* ViewCoreData.swift */; };
 		1554639729255CE10090D30A /* ViewControllerUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554639629255CE10090D30A /* ViewControllerUserDefaults.swift */; };
 		15546399292560130090D30A /* ExtensionUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15546398292560130090D30A /* ExtensionUserDefaults.swift */; };
+		1554639B292629C50090D30A /* AddForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554639A292629C50090D30A /* AddForm.swift */; };
+		1554639D29262AAD0090D30A /* CellRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554639C29262AAD0090D30A /* CellRealm.swift */; };
+		1554639F29262AD60090D30A /* ClassRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1554639E29262AD60090D30A /* ClassRealm.swift */; };
+		155463A129262AEC0090D30A /* ViewControllerRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155463A029262AEC0090D30A /* ViewControllerRealm.swift */; };
+		155463A329262B1A0090D30A /* ToDoClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155463A229262B1A0090D30A /* ToDoClass.swift */; };
 		158C45D9291B90B300EBBA46 /* Pods_Mod14.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC242233AE63AB07C69E6D8 /* Pods_Mod14.framework */; };
 		158C45DA291B90B300EBBA46 /* Pods_Mod14.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BCC242233AE63AB07C69E6D8 /* Pods_Mod14.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		15EC6DD627DF81EB00F43B7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EC6DD527DF81EB00F43B7F /* AppDelegate.swift */; };
@@ -44,6 +49,11 @@
 		155463942924F9120090D30A /* ViewCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCoreData.swift; sourceTree = "<group>"; };
 		1554639629255CE10090D30A /* ViewControllerUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUserDefaults.swift; sourceTree = "<group>"; };
 		15546398292560130090D30A /* ExtensionUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUserDefaults.swift; sourceTree = "<group>"; };
+		1554639A292629C50090D30A /* AddForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddForm.swift; sourceTree = "<group>"; };
+		1554639C29262AAD0090D30A /* CellRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellRealm.swift; sourceTree = "<group>"; };
+		1554639E29262AD60090D30A /* ClassRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRealm.swift; sourceTree = "<group>"; };
+		155463A029262AEC0090D30A /* ViewControllerRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRealm.swift; sourceTree = "<group>"; };
+		155463A229262B1A0090D30A /* ToDoClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoClass.swift; sourceTree = "<group>"; };
 		158C45D3291A5FAB00EBBA46 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		15EC6DD227DF81EB00F43B7F /* Mod14.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mod14.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15EC6DD527DF81EB00F43B7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,13 +116,18 @@
 				15EC6DD527DF81EB00F43B7F /* AppDelegate.swift */,
 				15EC6DD727DF81EB00F43B7F /* SceneDelegate.swift */,
 				15EC6DD927DF81EB00F43B7F /* ViewControllerCoreData.swift */,
+				155463922924F8D50090D30A /* propertiesCoreData.swift */,
+				155463902924F88B0090D30A /* classCoreData.swift */,
 				155463942924F9120090D30A /* ViewCoreData.swift */,
 				15EC6E0F27FC6DE300F43B7F /* TableViewCellCD.swift */,
-				155463902924F88B0090D30A /* classCoreData.swift */,
-				155463922924F8D50090D30A /* propertiesCoreData.swift */,
-				15EC6DE927DF824F00F43B7F /* Persistence.swift */,
 				1554639629255CE10090D30A /* ViewControllerUserDefaults.swift */,
 				15546398292560130090D30A /* ExtensionUserDefaults.swift */,
+				155463A029262AEC0090D30A /* ViewControllerRealm.swift */,
+				1554639A292629C50090D30A /* AddForm.swift */,
+				1554639C29262AAD0090D30A /* CellRealm.swift */,
+				1554639E29262AD60090D30A /* ClassRealm.swift */,
+				155463A229262B1A0090D30A /* ToDoClass.swift */,
+				15EC6DE927DF824F00F43B7F /* Persistence.swift */,
 				15EC6DDB27DF81EB00F43B7F /* Main.storyboard */,
 				15EC6DDE27DF81EC00F43B7F /* Assets.xcassets */,
 				15EC6DE027DF81EC00F43B7F /* LaunchScreen.storyboard */,
@@ -249,10 +264,15 @@
 				1554639729255CE10090D30A /* ViewControllerUserDefaults.swift in Sources */,
 				15EC6DDA27DF81EB00F43B7F /* ViewControllerCoreData.swift in Sources */,
 				15EC6DEA27DF824F00F43B7F /* Persistence.swift in Sources */,
+				1554639B292629C50090D30A /* AddForm.swift in Sources */,
 				155463952924F9120090D30A /* ViewCoreData.swift in Sources */,
 				15EC6DD627DF81EB00F43B7F /* AppDelegate.swift in Sources */,
+				1554639D29262AAD0090D30A /* CellRealm.swift in Sources */,
+				155463A129262AEC0090D30A /* ViewControllerRealm.swift in Sources */,
+				155463A329262B1A0090D30A /* ToDoClass.swift in Sources */,
 				15EC6DD827DF81EB00F43B7F /* SceneDelegate.swift in Sources */,
 				155463932924F8D50090D30A /* propertiesCoreData.swift in Sources */,
+				1554639F29262AD60090D30A /* ClassRealm.swift in Sources */,
 				15546399292560130090D30A /* ExtensionUserDefaults.swift in Sources */,
 				155463912924F88B0090D30A /* classCoreData.swift in Sources */,
 			);

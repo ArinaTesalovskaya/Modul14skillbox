@@ -1,9 +1,4 @@
-//
-//  ViewController.swift
-//  Mod14
-//
-//  Created by Arina Tesalovskaya on 14.03.2022.
-//
+
 
 import UIKit
 import CoreData
@@ -51,7 +46,7 @@ class ViewControllerCoreData: UIViewController {
                 self.getData(); self.tableView.reloadData()
                 self.addButton.isEnabled = true
                 self.updateTime?.invalidate()
-                print("Обновление")
+                print("обновление")
                 //            }
             }
         }
@@ -59,7 +54,6 @@ class ViewControllerCoreData: UIViewController {
         func updaterStart() {
             self.updateTime = Timer.scheduledTimer(timeInterval: delay, target: self, selector: #selector(self.updater), userInfo: nil, repeats: true) }
         
-    
 
         override func viewDidLoad() {
             super.viewDidLoad()
@@ -67,7 +61,7 @@ class ViewControllerCoreData: UIViewController {
         
         override func viewDidAppear(_ animated: Bool) {
             super.viewDidAppear(animated)
-            SVProgressHUD.show(withStatus:"Обновление")
+            SVProgressHUD.show(withStatus:"обновление")
             SVProgressHUD.setOffsetFromCenter(UIOffset(horizontal: self.view.frame.width / 2, vertical: self.view.frame.height / 2))
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                 self.getData(); self.tableView.reloadData()
