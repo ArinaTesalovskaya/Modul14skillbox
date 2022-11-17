@@ -15,7 +15,8 @@ class ViewControllerCoreData: UIViewController {
     
             addButton.isEnabled = false
             constraints = super.view.constraints.count
-            //        self.updateTime?.invalidate()
+          
+           
             let addForm = ViewCoreData.loadFromNIB()
             self.view.addSubview(addForm)
             addForm.TaskText.becomeFirstResponder()
