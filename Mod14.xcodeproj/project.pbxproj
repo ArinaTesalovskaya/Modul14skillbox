@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		152322C3292B71C500DF027B /* AddForm.xib in Resources */ = {isa = PBXBuildFile; fileRef = 152322C2292B71C500DF027B /* AddForm.xib */; };
 		155463912924F88B0090D30A /* classCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155463902924F88B0090D30A /* classCoreData.swift */; };
 		155463932924F8D50090D30A /* propertiesCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155463922924F8D50090D30A /* propertiesCoreData.swift */; };
 		155463952924F9120090D30A /* ViewCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155463942924F9120090D30A /* ViewCoreData.swift */; };
@@ -19,6 +20,7 @@
 		155463A329262B1A0090D30A /* ToDoClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155463A229262B1A0090D30A /* ToDoClass.swift */; };
 		158C45D9291B90B300EBBA46 /* Pods_Mod14.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC242233AE63AB07C69E6D8 /* Pods_Mod14.framework */; };
 		158C45DA291B90B300EBBA46 /* Pods_Mod14.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BCC242233AE63AB07C69E6D8 /* Pods_Mod14.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		15B88006293151F100AD2C10 /* ViewCoreData.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15B88005293151F100AD2C10 /* ViewCoreData.xib */; };
 		15EC6DD627DF81EB00F43B7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EC6DD527DF81EB00F43B7F /* AppDelegate.swift */; };
 		15EC6DD827DF81EB00F43B7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EC6DD727DF81EB00F43B7F /* SceneDelegate.swift */; };
 		15EC6DDA27DF81EB00F43B7F /* ViewControllerCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EC6DD927DF81EB00F43B7F /* ViewControllerCoreData.swift */; };
@@ -44,6 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		152322C2292B71C500DF027B /* AddForm.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddForm.xib; sourceTree = "<group>"; };
 		155463902924F88B0090D30A /* classCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classCoreData.swift; sourceTree = "<group>"; };
 		155463922924F8D50090D30A /* propertiesCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = propertiesCoreData.swift; sourceTree = "<group>"; };
 		155463942924F9120090D30A /* ViewCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCoreData.swift; sourceTree = "<group>"; };
@@ -54,7 +57,8 @@
 		1554639E29262AD60090D30A /* ClassRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRealm.swift; sourceTree = "<group>"; };
 		155463A029262AEC0090D30A /* ViewControllerRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRealm.swift; sourceTree = "<group>"; };
 		155463A229262B1A0090D30A /* ToDoClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoClass.swift; sourceTree = "<group>"; };
-		158C45D3291A5FAB00EBBA46 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		158C45D3291A5FAB00EBBA46 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		15B88005293151F100AD2C10 /* ViewCoreData.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewCoreData.xib; sourceTree = "<group>"; };
 		15EC6DD227DF81EB00F43B7F /* Mod14.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mod14.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15EC6DD527DF81EB00F43B7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15EC6DD727DF81EB00F43B7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +123,7 @@
 				155463922924F8D50090D30A /* propertiesCoreData.swift */,
 				155463902924F88B0090D30A /* classCoreData.swift */,
 				155463942924F9120090D30A /* ViewCoreData.swift */,
+				15B88005293151F100AD2C10 /* ViewCoreData.xib */,
 				15EC6E0F27FC6DE300F43B7F /* TableViewCellCD.swift */,
 				1554639629255CE10090D30A /* ViewControllerUserDefaults.swift */,
 				15546398292560130090D30A /* ExtensionUserDefaults.swift */,
@@ -129,6 +134,7 @@
 				155463A229262B1A0090D30A /* ToDoClass.swift */,
 				15EC6DE927DF824F00F43B7F /* Persistence.swift */,
 				15EC6DDB27DF81EB00F43B7F /* Main.storyboard */,
+				152322C2292B71C500DF027B /* AddForm.xib */,
 				15EC6DDE27DF81EC00F43B7F /* Assets.xcassets */,
 				15EC6DE027DF81EC00F43B7F /* LaunchScreen.storyboard */,
 				15EC6DE327DF81EC00F43B7F /* Info.plist */,
@@ -206,8 +212,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				15EC6DE227DF81EC00F43B7F /* LaunchScreen.storyboard in Resources */,
+				152322C3292B71C500DF027B /* AddForm.xib in Resources */,
 				15EC6DDF27DF81EC00F43B7F /* Assets.xcassets in Resources */,
 				15EC6DDD27DF81EB00F43B7F /* Main.storyboard in Resources */,
+				15B88006293151F100AD2C10 /* ViewCoreData.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,8 +430,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 77BR9W6GZ6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Mod14/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -438,6 +448,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Arina-Tesalovskaya.Mod14";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -450,8 +461,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 77BR9W6GZ6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Mod14/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -466,6 +479,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Arina-Tesalovskaya.Mod14";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

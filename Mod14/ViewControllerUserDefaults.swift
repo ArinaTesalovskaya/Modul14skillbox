@@ -13,7 +13,7 @@ class ViewControllerUserDefaults: UIViewController {
     @IBOutlet weak var CoreDataSection: UIButton!
     
     @IBAction func NameEdit(_ sender: Any) {
-      Persistance.sharing.NameData = Name.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        Persistance.sharing.NameData = Name.text!.trimmingCharacters(in: .whitespacesAndNewlines)
     }
     @IBAction func SecondnameEdit(_ sender: Any) {
         Persistance.sharing.SecondnameData = Secondname.text!.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -21,7 +21,7 @@ class ViewControllerUserDefaults: UIViewController {
     @IBAction func NameCleaner(_ sender: Any) {
         (Name.text, Secondname.text) = (nil, nil)
         Persistance.sharing.NameData = nil
-//        Persistance.sharing.Secondname = nil
+        Persistance.sharing.SecondnameData = nil
         transitionFlipFromTop(Name)
         transitionFlipFromBottom(Secondname)
         Name.becomeFirstResponder()
@@ -29,11 +29,13 @@ class ViewControllerUserDefaults: UIViewController {
     }
     
     @IBAction func RealmTap(_ sender: Any) {
-        disableAnimationImage()
+//        disableAnimationImage() //// CHANGED
+         CoreDataImage.isHidden = true
     }
     
     @IBAction func CoreDataTap(_ sender: Any) {
-        disableAnimationImage()
+//        disableAnimationImage() //// CHANGED
+         RealmImage.isHidden = true
     }
     
     @IBAction func Exit(_ sender: Any) {
@@ -52,7 +54,7 @@ class ViewControllerUserDefaults: UIViewController {
             transitionFlipFromTop(Name)
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
                 self.Name.text = Persistance.sharing.NameData
-            }
+            } 
         }
         if Persistance.sharing.SecondnameData != nil {
             transitionFlipFromTop(Secondname)

@@ -61,7 +61,7 @@ class ViewCoreData: UIView {
     }
     
     static func loadFromNIB() -> ViewCoreData {
-        let nib = UINib(nibName: "AddFormCoreData", bundle: nil)
+        let nib = UINib(nibName: "ViewCoreData", bundle: nil)
         return nib.instantiate(withOwner: self, options: nil).first as! ViewCoreData
     }
     

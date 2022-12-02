@@ -46,14 +46,15 @@ class ViewControllerRealm: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.todo = RealmClass.shared.getTasks()
+     
+        self.todo = ClassRealm.shared.getTasks()
     }
 }
 
 extension ViewControllerRealm: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if todo.count != 0 {
-            return todo.count
+            return 10
         } else {
             return 0
         }}
@@ -66,11 +67,11 @@ extension ViewControllerRealm: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let action = UIContextualAction(style: .destructive, title: "Удалить") { _, _, completion in
-            RealmClass.shared.remove(todo: self.todo[indexPath.row])
-            self.tableView.deleteRows(at: [indexPath], with: .automatic)
-            completion(true)
+            let action = UIContextualAction(style: .destructive, title: "Удалить") { _, _, completion in
+                ClassRealm.shared.remove(todo: self.todo[indexPath.row])
+                self.tableView.deleteRows(at: [indexPath], with: .automatic)
+                completion(true)
+            }
+            return UISwipeActionsConfiguration(actions: [action])
         }
-        return UISwipeActionsConfiguration(actions: [action])
-    }
 }

@@ -15,33 +15,35 @@ class AddForm: UIView {
     @IBOutlet weak var Cancel: UIButton!
     @IBOutlet weak var Add: UIButton!
     
-    @IBAction func AddTouch(_ sender: Any) {
-        RealmClass.shared.add(tasktext: self.Task.text)
+   @IBAction func AddTouch(_ sender: Any) {
+        ClassRealm.shared.add(tasktext: self.Task.text)
         UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseInOut, animations: {
             self.center.y -= UIScreen.main.bounds.height
         }, completion: { _ in
             super.removeFromSuperview()
         })
-        let rc = RealmClass()
+        let rc = ClassRealm()
         print("UIID: \(self.todoinfo.uuid)")
         print("Дата и время: \(rc.DateString())")
         print("Пользователь: \(username())")
         if self.Task.text.count > 0 {
-            print("Текст: \(self.Task.text!)")
+            print("\(self.Task.text!)")
         } else {
-            print("Текст:-")
+            print("Zero")
         }
-        print("- - - - - - - - - - - - - - - - -")
+        print("-")
     }
     
+
     @IBAction func CancelTouch(_ sender: Any) {
+    
         UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseInOut, animations: {
             self.center.y += UIScreen.main.bounds.height
         }, completion: { _ in
             super.removeFromSuperview()
         })
         
-        let rc = RealmClass()
+        let rc = ClassRealm()
         print("UIID: \(self.todoinfo.uuid)")
         print("Дата и время: \(rc.DateString())")
         print("Пользователь: \(username())")

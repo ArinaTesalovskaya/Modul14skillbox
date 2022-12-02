@@ -3,4 +3,114 @@
    uuid = "4A7E1CEF-9D76-4F9A-A831-5C972FFD6E9F"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D95A4CB9-1415-4873-996D-008858CC4A12"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mod14/AddForm.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "AddForm"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "D95A4CB9-1415-4873-996D-008858CC4A12 - 232283bf28875a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mod14.AddForm.Task.getter : Swift.Optional&lt;__C.UITextView&gt;"
+                  moduleName = "Mod14"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arinatesalovskaya/Desktop/IOS/Mod14/Mod14/AddForm.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "D95A4CB9-1415-4873-996D-008858CC4A12 - 4e4eb46633f62db7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mod14.AddForm.Task.setter : Swift.Optional&lt;__C.UITextView&gt;"
+                  moduleName = "Mod14"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arinatesalovskaya/Desktop/IOS/Mod14/Mod14/AddForm.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "D95A4CB9-1415-4873-996D-008858CC4A12 - 5a835fcab1bdd468"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mod14.AddForm.Task.modify : Swift.Optional&lt;__C.UITextView&gt;"
+                  moduleName = "Mod14"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arinatesalovskaya/Desktop/IOS/Mod14/Mod14/AddForm.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "D95A4CB9-1415-4873-996D-008858CC4A12 - a5312fb62b4229b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mod14.AddForm.Task.modify : Swift.Optional&lt;__C.UITextView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Mod14"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arinatesalovskaya/Desktop/IOS/Mod14/Mod14/AddForm.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "D95A4CB9-1415-4873-996D-008858CC4A12 - 119d3f7e84c64545"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mod14.AddForm.init(frame: __C.CGRect) -&gt; Mod14.AddForm"
+                  moduleName = "Mod14"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arinatesalovskaya/Desktop/IOS/Mod14/Mod14/AddForm.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "540">
+               </Location>
+               <Location
+                  uuid = "D95A4CB9-1415-4873-996D-008858CC4A12 - 2be2d330698ce4c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mod14.AddForm.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Mod14.AddForm&gt;"
+                  moduleName = "Mod14"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arinatesalovskaya/Desktop/IOS/Mod14/Mod14/AddForm.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "512">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

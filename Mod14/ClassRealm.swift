@@ -3,9 +3,9 @@
 import Foundation
 import RealmSwift
 
-class RealmClass {
+class ClassRealm {
     
-    static let shared = RealmClass()
+    static let shared = ClassRealm()
     private let realm = try! Realm()
     
     func getTasks() -> Results<ToDoClass> {

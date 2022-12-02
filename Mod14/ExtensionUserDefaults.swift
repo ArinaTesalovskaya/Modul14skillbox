@@ -37,17 +37,17 @@ extension ViewControllerUserDefaults {
            
             self.Welcome.alpha = 1
         
-            DispatchQueue.main.async {
-                UIView.animate(
-                    withDuration: 0.2,
-                    delay: 0,
-                    options: [.repeat, .autoreverse, .curveEaseInOut],
-                    animations: {
-                        self.GagView.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 5)
-                    });
-            }
+//            DispatchQueue.main.async {
+//                UIView.animate(
+//                    withDuration: 0.2,
+//                    delay: 0,
+//                    options: [.repeat, .autoreverse, .curveEaseInOut],
+//                    animations: {
+//                        self.GagView.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 10)///change
+//                    });
+//            }
             RealmSection.setBackgroundImage(UIImage(named: "realm"), for: UIControl.State.normal)
-            self.Welcome.text = "Здравствуйте\n\(username())"
+            self.Welcome.text = "Здравствуйте, \(username())"
             self.Welcome.textAlignment = .center
             self.Welcome.font = .systemFont(ofSize: 25)
         } else {
@@ -131,7 +131,7 @@ extension ViewControllerUserDefaults {
                     delay: 2.5,
                     options: [.repeat, .autoreverse, .curveEaseInOut],
                     animations: {
-                        self.CoreDataImage.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 15)
+                        self.CoreDataImage.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 1)
                     });
             }
         }

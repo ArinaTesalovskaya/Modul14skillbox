@@ -83,7 +83,7 @@ class ViewControllerCoreData: UIViewController {
             return tasks.count
         }
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! TableViewCellCoreData
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCellCoreData") as! TableViewCellCoreData
             let row = tasks[indexPath.row]
             cell.NameSecondname.text = row.name
             cell.DateTime.text = "\(row.date!)"

@@ -8,5 +8,5 @@ target 'Mod14' do
 pod 'Alamofire'
 pod 'SVProgressHUD'
 pod 'RealmSwift'
-  
+ 
 end
