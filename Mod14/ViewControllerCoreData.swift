@@ -44,12 +44,12 @@ class ViewControllerCoreData: UIViewController {
             if constraints != super.view.constraints.count {
                 getData(); tableView.reloadData();
             } else {
-                //            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+//                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 self.getData(); self.tableView.reloadData()
                 self.addButton.isEnabled = true
                 self.updateTime?.invalidate()
                 print("обновление")
-                //            }
+//                            }
             }
         }
         
