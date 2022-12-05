@@ -4,10 +4,10 @@ import UIKit
 import RealmSwift
 
 class ViewControllerRealm: UIViewController {
-    
-    private let realm = try! Realm()
+
     var todo: Results<ToDoClass>!
-    
+
+   
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var AddTaskButton: UIButton!
     
@@ -26,6 +26,7 @@ class ViewControllerRealm: UIViewController {
         })
         AddForm.Task.becomeFirstResponder()
         updaterStart()
+        
     }
     
     var updateTime: Timer?
@@ -42,28 +43,35 @@ class ViewControllerRealm: UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         self.updateTime?.invalidate()
+    
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
      
         self.todo = ClassRealm.shared.getTasks()
+        
     }
 }
 
 extension ViewControllerRealm: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if todo.count != 0 {
-            return 10
-        } else {
-            return 0
-        }}
+        todo.count
+        
+//        if todo.count != 0 {
+//            return 0
+//        } else {
+//            return 0
+//        }
+
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellRealm") as! CellRealm
         let row = self.todo[indexPath.row]
         cell.DateTime.text = row.date
         cell.TaskText.text = row.task
         return cell
+       
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {

@@ -16,7 +16,6 @@ class ViewControllerCoreData: UIViewController {
             addButton.isEnabled = false
             constraints = super.view.constraints.count
           
-           
             let addForm = ViewCoreData.loadFromNIB()
             self.view.addSubview(addForm)
             addForm.TaskText.becomeFirstResponder()
@@ -59,6 +58,7 @@ class ViewControllerCoreData: UIViewController {
 
         override func viewDidLoad() {
             super.viewDidLoad()
+            
         }
         
         override func viewDidAppear(_ animated: Bool) {

@@ -8,7 +8,9 @@ class ClassRealm {
     static let shared = ClassRealm()
     private let realm = try! Realm()
     
+
     func getTasks() -> Results<ToDoClass> {
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
         return realm.objects(ToDoClass.self)
     }
     

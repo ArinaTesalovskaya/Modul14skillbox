@@ -39,8 +39,10 @@ class AddForm: UIView {
     
         UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseInOut, animations: {
             self.center.y += UIScreen.main.bounds.height
+           
         }, completion: { _ in
             super.removeFromSuperview()
+            
         })
         
         let rc = ClassRealm()
@@ -49,6 +51,8 @@ class AddForm: UIView {
         print("Пользователь: \(username())")
         print("!")
         print("- -")
+       
+        
     }
     
     static func loadFromNIB() -> AddForm{
