@@ -6,7 +6,7 @@ import SVProgressHUD
 class ViewControllerCoreData: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var addButton: UIBarButtonItem!
+    @IBOutlet weak var addButton: UIButton!
     
     let CoreData = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var tasks = [Tasks]()

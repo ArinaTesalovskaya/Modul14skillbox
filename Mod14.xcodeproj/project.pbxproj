@@ -21,6 +21,7 @@
 		158C45D9291B90B300EBBA46 /* Pods_Mod14.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC242233AE63AB07C69E6D8 /* Pods_Mod14.framework */; };
 		158C45DA291B90B300EBBA46 /* Pods_Mod14.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BCC242233AE63AB07C69E6D8 /* Pods_Mod14.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		15B88006293151F100AD2C10 /* ViewCoreData.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15B88005293151F100AD2C10 /* ViewCoreData.xib */; };
+		15B880122942143200AD2C10 /* Mod14.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 15B880102942143200AD2C10 /* Mod14.xcdatamodeld */; };
 		15EC6DD627DF81EB00F43B7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EC6DD527DF81EB00F43B7F /* AppDelegate.swift */; };
 		15EC6DD827DF81EB00F43B7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EC6DD727DF81EB00F43B7F /* SceneDelegate.swift */; };
 		15EC6DDA27DF81EB00F43B7F /* ViewControllerCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EC6DD927DF81EB00F43B7F /* ViewControllerCoreData.swift */; };
@@ -59,6 +60,7 @@
 		155463A229262B1A0090D30A /* ToDoClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoClass.swift; sourceTree = "<group>"; };
 		158C45D3291A5FAB00EBBA46 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		15B88005293151F100AD2C10 /* ViewCoreData.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewCoreData.xib; sourceTree = "<group>"; };
+		15B880112942143200AD2C10 /* Mod14.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mod14.xcdatamodel; sourceTree = "<group>"; };
 		15EC6DD227DF81EB00F43B7F /* Mod14.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mod14.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15EC6DD527DF81EB00F43B7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15EC6DD727DF81EB00F43B7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				15EC6DDE27DF81EC00F43B7F /* Assets.xcassets */,
 				15EC6DE027DF81EC00F43B7F /* LaunchScreen.storyboard */,
 				15EC6DE327DF81EC00F43B7F /* Info.plist */,
+				15B880102942143200AD2C10 /* Mod14.xcdatamodeld */,
 			);
 			path = Mod14;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				1554639F29262AD60090D30A /* ClassRealm.swift in Sources */,
 				15546399292560130090D30A /* ExtensionUserDefaults.swift in Sources */,
 				155463912924F88B0090D30A /* classCoreData.swift in Sources */,
+				15B880122942143200AD2C10 /* Mod14.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,6 +512,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		15B880102942143200AD2C10 /* Mod14.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				15B880112942143200AD2C10 /* Mod14.xcdatamodel */,
+			);
+			currentVersion = 15B880112942143200AD2C10 /* Mod14.xcdatamodel */;
+			path = Mod14.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 15EC6DCA27DF81EB00F43B7F /* Project object */;
 }

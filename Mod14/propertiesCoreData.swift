@@ -3,7 +3,7 @@
 import Foundation
 import CoreData
 
-extension Tasks {
+extension Tasks  {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Tasks> {
         return NSFetchRequest<Tasks>(entityName: "Tasks")

@@ -14,36 +14,32 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hb3-Bp-hxH">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hb3-Bp-hxH">
                     <rect key="frame" x="74" y="346" width="47" height="31"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Yes"/>
                     <connections>
                         <action selector="YesTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="Wgg-n9-y4e"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ch8-gl-t8Q">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ch8-gl-t8Q">
                     <rect key="frame" x="266" y="346" width="43" height="31"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="No"/>
                     <connections>
                         <action selector="NoTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="BH8-fX-NPh"/>
                     </connections>
                 </button>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="TaskText" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="o80-c7-sKe">
-                    <rect key="frame" x="57" y="207" width="312" height="131"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="TaskText" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="o80-c7-sKe">
+                    <rect key="frame" x="74" y="207" width="295" height="131"/>
                     <color key="backgroundColor" systemColor="placeholderTextColor"/>
                     <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="textColor" systemColor="labelColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Hd-YC-SgT">
-                    <rect key="frame" x="165" y="387" width="84" height="31"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Hd-YC-SgT">
+                    <rect key="frame" x="144" y="385" width="127" height="31"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Assistant"/>
                     <connections>
@@ -53,13 +49,28 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="o80-c7-sKe" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="163" id="0ET-K9-Jlr"/>
+                <constraint firstItem="Ch8-gl-t8Q" firstAttribute="top" secondItem="o80-c7-sKe" secondAttribute="bottom" constant="8" symbolic="YES" id="CLf-JL-i8u"/>
+                <constraint firstItem="hb3-Bp-hxH" firstAttribute="baseline" secondItem="Ch8-gl-t8Q" secondAttribute="baseline" id="IZd-wf-GHO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="hb3-Bp-hxH" secondAttribute="bottom" constant="485" id="K9F-e9-h6o"/>
+                <constraint firstItem="hb3-Bp-hxH" firstAttribute="top" secondItem="o80-c7-sKe" secondAttribute="bottom" constant="8" symbolic="YES" id="KDK-aD-KGd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="o80-c7-sKe" secondAttribute="trailing" constant="45" id="O47-p1-pjc"/>
+                <constraint firstItem="hb3-Bp-hxH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="74" id="dhV-Mt-yCl"/>
+                <constraint firstItem="hb3-Bp-hxH" firstAttribute="top" secondItem="o80-c7-sKe" secondAttribute="bottom" constant="8" id="kZh-7h-YkR"/>
+                <constraint firstItem="1Hd-YC-SgT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="0.5" id="lTB-gA-Azy"/>
+                <constraint firstItem="Ch8-gl-t8Q" firstAttribute="leading" secondItem="hb3-Bp-hxH" secondAttribute="trailing" constant="145" id="lhp-Td-sdV"/>
+                <constraint firstItem="1Hd-YC-SgT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="144" id="rBp-9e-kVf"/>
+                <constraint firstItem="1Hd-YC-SgT" firstAttribute="firstBaseline" secondItem="Ch8-gl-t8Q" secondAttribute="baseline" constant="39" id="vYw-TS-Hzo"/>
+                <constraint firstItem="hb3-Bp-hxH" firstAttribute="leading" secondItem="o80-c7-sKe" secondAttribute="leading" id="yRc-sp-kaM"/>
+            </constraints>
             <connections>
                 <outlet property="Assistant" destination="1Hd-YC-SgT" id="qEe-TB-SIg"/>
                 <outlet property="NoButton" destination="Ch8-gl-t8Q" id="UO9-XH-6KR"/>
                 <outlet property="TaskText" destination="o80-c7-sKe" id="KZm-rD-qp3"/>
                 <outlet property="YesButton" destination="hb3-Bp-hxH" id="VyS-H1-Bmh"/>
             </connections>
-            <point key="canvasLocation" x="165" y="-21"/>
+            <point key="canvasLocation" x="163.768115942029" y="-21.428571428571427"/>
         </view>
     </objects>
     <resources>
