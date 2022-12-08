@@ -26,7 +26,10 @@ class ViewControllerCoreData: UIViewController {
             updaterStart()
         }
         
-        func getData() {
+    @IBAction func backCoreData(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    func getData() {
             let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
             do {
                 tasks = try context.fetch(Tasks.fetchRequest())

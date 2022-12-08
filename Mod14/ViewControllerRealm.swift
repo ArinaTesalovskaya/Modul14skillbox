@@ -29,6 +29,10 @@ class ViewControllerRealm: UIViewController {
         
     }
     
+    
+    @IBAction func backRealm(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     var updateTime: Timer?
     var delay = 1.0
     
